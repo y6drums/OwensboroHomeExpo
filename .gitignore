@@ -6,3 +6,6 @@ node_modules/
 
 # Camera originals (500MB+). Web-ready copies live in assets/img/gallery/.
 assets/media/
+
+# Working files, not part of the site
+assets/Sponsors.rtf

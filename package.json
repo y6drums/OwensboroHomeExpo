@@ -1,0 +1,9 @@
+{
+  "name": "owensboro-home-expo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Owensboro Home Expo — static site plus two Resend-backed serverless functions",
+  "engines": {
+    "node": "22.x"
+  }
+}

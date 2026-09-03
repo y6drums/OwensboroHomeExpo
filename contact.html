@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Owensboro Home Expo</title>
+<meta name="description" content="Questions about attending, exhibiting, sponsoring or covering the Owensboro Home Expo? Contact the Green River Building Industry Association.">
+<link rel="canonical" href="https://owensborohomeexpo.com/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact | Owensboro Home Expo">
+<meta property="og:description" content="Questions about attending, exhibiting, sponsoring or covering the Owensboro Home Expo? Contact the Green River Building Industry Association.">
+<meta property="og:image" content="assets/img/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a class="nav__logo" href="index.html" aria-label="Owensboro Home Expo — home">
+        <img src="assets/img/logo.png" alt="Owensboro Home Expo" width="240" height="127">
+      </a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span class="sr-only">Toggle navigation</span>
+      </button>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="why-attend.html">Why Attend</a></li>
+          <li><a href="vendors.html">Exhibitors</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+        <div class="nav__cta">
+          <a class="btn btn--primary btn--sm" href="exhibit.html">Become an Exhibitor</a>
+        </div>
+      </div>
+      <div class="nav__cta">
+        <a class="btn btn--primary btn--sm" href="exhibit.html">Become an Exhibitor</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="container">
+      <div class="page-head__inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> &rsaquo; Contact</nav>
+        <span class="eyebrow eyebrow--on-dark">Get in touch</span>
+        <h1>Questions about the Expo?</h1>
+        <p class="lede">
+          Attending, exhibiting, sponsoring or covering the show — send it over and we'll get back to you
+          within two business days.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="split split--form">
+
+        <!-- Form -->
+        <div>
+          <div class="form-shell success-panel" id="contact-success">
+            <div class="success-panel__mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12.5 5 5L20 6.5"/></svg>
+            </div>
+            <h2>Message sent</h2>
+            <p class="lede center-narrow">
+              Thanks for reaching out — that's landed with the Green River BIA. We'll reply within two
+              business days.
+            </p>
+            <p class="mt-2">In a hurry? Call <a href="tel:+12706880353">(270) 688-0353</a>.</p>
+            <div class="btn-row btn-row--center mt-3">
+              <a class="btn btn--navy" href="index.html">Back to the home page</a>
+            </div>
+          </div>
+
+          <div class="form-shell reveal">
+            <h2 style="font-size:clamp(1.4rem,2.4vw,1.85rem)">Send us a message</h2>
+            <p class="mb-3" style="color:var(--ink-soft)">Required fields are marked with an asterisk.</p>
+
+            <form id="contact-form" novalidate
+                  data-endpoint="/api/contact"
+                  data-success="contact-success">
+
+              <div class="form-status" role="alert"></div>
+
+              <div class="hp" aria-hidden="true">
+                <label for="c-gotcha">Leave this field empty</label>
+                <input type="text" id="c-gotcha" name="_gotcha" tabindex="-1" autocomplete="off">
+              </div>
+
+              <div class="form-grid">
+                <div>
+                  <label class="label" for="c-name">Your name <span class="req" aria-hidden="true">*</span></label>
+                  <input class="input" type="text" id="c-name" name="name" required autocomplete="name">
+                  <p class="error-msg" id="c-name-error"></p>
+                </div>
+
+                <div>
+                  <label class="label" for="c-email">Email <span class="req" aria-hidden="true">*</span></label>
+                  <input class="input" type="email" id="c-email" name="email" required autocomplete="email">
+                  <p class="error-msg" id="c-email-error"></p>
+                </div>
+
+                <div>
+                  <label class="label" for="c-phone">Phone <span class="opt">(optional)</span></label>
+                  <input class="input" type="tel" id="c-phone" name="phone" autocomplete="tel" placeholder="(270) 555-0100">
+                </div>
+
+                <div>
+                  <label class="label" for="c-company">Business <span class="opt">(optional)</span></label>
+                  <input class="input" type="text" id="c-company" name="company" autocomplete="organization">
+                </div>
+
+                <div class="field--full">
+                  <label class="label" for="c-topic">What's this about? <span class="req" aria-hidden="true">*</span></label>
+                  <select class="select" id="c-topic" name="topic" required>
+                    <option value="">Choose a topic…</option>
+                    <option>Visiting the Expo</option>
+                    <option>Booth space &amp; exhibiting</option>
+                    <option>Sponsorship opportunities</option>
+                    <option>GRBIA membership</option>
+                    <option>Press &amp; media enquiry</option>
+                    <option>Accessibility request</option>
+                    <option>Volunteering</option>
+                    <option>Something else</option>
+                  </select>
+                  <p class="hint">Exhibiting? The <a href="exhibit.html">booth application</a> is faster — it collects everything we need up front.</p>
+                  <p class="error-msg" id="c-topic-error"></p>
+                </div>
+
+                <div class="field--full">
+                  <label class="label" for="c-message">Your message <span class="req" aria-hidden="true">*</span></label>
+                  <textarea class="textarea" id="c-message" name="message" required minlength="10"
+                    placeholder="Tell us what you need and we'll point you to the right person."></textarea>
+                  <p class="error-msg" id="c-message-error"></p>
+                </div>
+
+                <div class="field--full">
+                  <label class="check">
+                    <input type="checkbox" name="updates" value="Yes">
+                    <span>Email me when 2027 show details and exhibitor news are announced.</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="btn-row mt-3">
+                <button class="btn btn--primary btn--lg" type="submit">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Details -->
+        <aside class="reveal">
+          <div class="card" style="background:var(--sky-100);border-color:var(--sky-300)">
+            <span class="eyebrow">Direct contact</span>
+            <ul class="info-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h16v13H4z"/><path d="m4 6.5 8 6 8-6"/></svg>
+                <div><strong>Email</strong><a href="mailto:adam@greenriverbia.com">adam@greenriverbia.com</a></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+                <div><strong>Phone</strong><a href="tel:+12706880353">(270) 688-0353</a></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16"/><path d="M2 22h20M9 8h6M9 12h6M9 16h6"/></svg>
+                <div><strong>Association office</strong><span>Green River Building Industry Association<br>3515 Wathens Crossing<br>Owensboro, KY 42301</span></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3.5"/><path d="M2 21v-1.5A5.5 5.5 0 0 1 7.5 14h3A5.5 5.5 0 0 1 16 19.5V21"/></svg>
+                <div><strong>Executive Officer</strong><span>Adam Hicks</span></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card mt-2">
+            <span class="eyebrow">Show location</span>
+            <h3>Owensboro Convention Center</h3>
+            <p style="color:var(--ink-soft);font-size:.96rem">
+              501 West 2nd Street<br>Owensboro, KY 42301<br>
+              <a href="tel:+12706878800">(270) 687-8800</a>
+            </p>
+            <p class="mt-2" style="color:var(--ink-soft);font-size:.96rem">
+              <strong style="color:var(--navy-900)">Saturday, March 13</strong> · 10 AM – 5 PM<br>
+              <strong style="color:var(--navy-900)">Sunday, March 14</strong> · 11 AM – 4 PM
+            </p>
+            <p class="mt-2"><a href="https://maps.google.com/?q=Owensboro+Convention+Center,+501+W+2nd+St,+Owensboro,+KY+42301" target="_blank" rel="noopener noreferrer">Directions &rarr;</a></p>
+          </div>
+
+          <div class="map-frame mt-2" style="aspect-ratio:4/3">
+            <iframe
+              title="Map showing the Owensboro Convention Center at 501 West 2nd Street"
+              src="https://www.google.com/maps?q=Owensboro%20Convention%20Center%2C%20501%20W%202nd%20St%2C%20Owensboro%2C%20KY%2042301&output=embed"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <div class="cta-band__inner">
+        <div class="cta-band__text">
+          <span class="eyebrow eyebrow--on-dark">Looking to exhibit?</span>
+          <h2>The booth application is the faster route</h2>
+          <p>It collects your booth preferences, requirements and directory listing in one go — no
+             back-and-forth needed.</p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href="exhibit.html">Apply for a Booth</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__logo">
+          <img src="assets/img/logo-white.png" alt="Owensboro Home Expo" width="240" height="127">
+        </div>
+        <p style="margin-bottom:1em">
+          Presented annually by the Green River Building Industry Association — promoting, educating and
+          advocating for homeownership since 1958.
+        </p>
+        <div class="social">
+          <a href="https://www.facebook.com/p/Green-River-Building-Industry-Association-100064521496985/" target="_blank" rel="noopener noreferrer" aria-label="Green River BIA on Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.5 2.9h-2.3v7A10 10 0 0 0 22 12Z"/></svg>
+          </a>
+          <a href="https://greenriverbia.com" target="_blank" rel="noopener noreferrer" aria-label="Green River BIA website">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20a15.3 15.3 0 0 1 0-20"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>The Show</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="why-attend.html">Why Attend</a></li>
+          <li><a href="vendors.html">Exhibitor Directory</a></li>
+          <li><a href="media.html">Media &amp; Photos</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Exhibit</h4>
+        <ul>
+          <li><a href="exhibit.html">Booth Application</a></li>
+          <li><a href="exhibit.html#booths">Booths &amp; Pricing</a></li>
+          <li><a href="contact.html">Sponsorships</a></li>
+          <li><a href="https://greenriverbia.com" target="_blank" rel="noopener noreferrer">Join the GRBIA</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Green River Building Industry Association<br>3515 Wathens Crossing<br>Owensboro, KY 42301</li>
+          <li><a href="tel:+12706880353">(270) 688-0353</a></li>
+          <li><a href="mailto:adam@greenriverbia.com">adam@greenriverbia.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; <span data-current-year>2027</span> Green River Building Industry Association. All rights reserved.</span>
+      <a class="built-by" href="https://www.msquaredmarketing.com" target="_blank" rel="noopener noreferrer">
+        <span>Website built by</span>
+        <img src="assets/img/msquared-marketing-white.png" alt="M Squared Marketing Company"
+             width="2400" height="347" loading="lazy" decoding="async">
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/expo-data.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

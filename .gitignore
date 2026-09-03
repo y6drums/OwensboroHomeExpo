@@ -1,0 +1,8 @@
+.DS_Store
+.env
+.env.local
+.vercel
+node_modules/
+
+# Camera originals (500MB+). Web-ready copies live in assets/img/gallery/.
+assets/media/

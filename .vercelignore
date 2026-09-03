@@ -1,0 +1,12 @@
+# Camera originals — the web-ready versions live in assets/img/gallery/
+assets/media/
+
+# Working files
+assets/Sponsors.rtf
+*.rtf
+*.bak
+homeexpowhite.png
+logo.png
+update-dates.sh
+README.md
+.DS_Store

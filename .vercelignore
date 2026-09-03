@@ -1,12 +1,16 @@
-# Camera originals — the web-ready versions live in assets/img/gallery/
-assets/media/
+# NOTE: patterns without a leading slash match at EVERY directory level, the
+# same way .gitignore does. Bare "logo.png" here also excluded
+# assets/img/logo.png and broke the header logo in production. Anchor anything
+# that should only match the project root with a leading slash.
 
-# Working files
-assets/Sponsors.rtf
-*.rtf
+# Camera originals — web-ready copies live in assets/img/gallery/
+/assets/media/
+
+# Working files that don't belong in the deployment
+/assets/Sponsors.rtf
+/homeexpowhite.png
+/logo.png
+/update-dates.sh
+/README.md
 *.bak
-homeexpowhite.png
-logo.png
-update-dates.sh
-README.md
 .DS_Store

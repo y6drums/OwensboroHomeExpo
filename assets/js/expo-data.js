@@ -65,10 +65,10 @@ window.VENDORS = [
     website: 'https://hillcustom.com/'
   },
   {
-    name: 'Mattingly Custom Homes',
+    name: 'Homes by Mattingly Construction',
     category: 'Builders & Remodeling',
-    blurb: 'Local custom home builder handling new construction and major remodeling projects across Daviess County.',
-    logo: 'assets/img/vendors/mattingly-custom-homes.png',
+    blurb: 'Custom home building and construction management, handling new builds and major remodeling projects across Daviess County.',
+    logo: 'assets/img/vendors/homes-by-mattingly-construction.png',
     website: 'https://mattinglyhomes.com/'
   },
   {

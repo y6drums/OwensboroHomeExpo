@@ -418,10 +418,10 @@ Sourced from GRBIA and press coverage of the 2025/2026 shows:
   (formerly the Home Builders Association of Owensboro)
 - 3515 Wathens Crossing, Owensboro, KY 42301 · (270) 688-0353 · adam@greenriverbia.com
 - Executive Officer: **Adam Hicks**
-- Venue: Owensboro Convention Center, 501 W 2nd St · (270) 687-8800 · **44,000 sq ft**
+- Venue: Owensboro Convention Center, 501 W 2nd St · (270) 687-8800 · **144,000 sq ft**
 - 2026 show: March 14–15, **60+ exhibitors**, free admission via **Lee Building
   Products** and **Winsupply of Owensboro**
 - Exhibitor Reception: **Friday, March 12, 6–8 p.m., HBAO Building**
 - Cheques payable to the **Home Builders Association of Owensboro**
 - 2025 show: March 8–9, **70+ exhibitors**
-- The show has run for **30+ years**; GRBIA also runs a Fall Tour of Homes
+- The show has run for **40+ years**; GRBIA also runs a Fall Tour of Homes

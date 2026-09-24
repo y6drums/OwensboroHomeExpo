@@ -46,7 +46,6 @@ module.exports = async function handler(req, res) {
   const notes       = clean(body.notes);
   const blurb       = clean(body.blurb);
   const payment     = clean(body.payment);
-  const sponsorship = clean(body.sponsorship);
   const heardFrom   = clean(body.heardFrom);
 
   const required = {
@@ -110,7 +109,6 @@ module.exports = async function handler(req, res) {
     ['— Admin —', ' '],
     ['Payment preference', payment],
     ['Directory blurb', blurb],
-    ['Sponsorship interest', sponsorship],
     ['Heard about us via', heardFrom],
     ['Insurance requirement', 'Acknowledged'],
     ['Received', new Date().toLocaleString('en-US', { timeZone: 'America/Chicago', dateStyle: 'full', timeStyle: 'short' })]

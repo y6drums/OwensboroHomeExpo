@@ -78,6 +78,21 @@ hyphen.
 
 ---
 
+## Cache busting — read before every deploy
+
+`vercel.json` caches everything under `/assets/` for a year (`immutable`), so
+browsers never re-check those files. Every page loads `styles.css`,
+`expo-data.js` and `main.js` with a `?v=YYYYMMDD` query string. **When you edit
+any of those three files, bump the version on every page** or returning visitors
+keep the old copy:
+
+```sh
+sed -i '' 's/?v=[0-9]*/?v=NEWDATE/g' *.html
+```
+
+New image files get new filenames, so they don't need this. Replacing an existing
+image under the same filename does — rename it instead.
+
 ## Managing exhibitors
 
 All 31 confirmed 2027 exhibitors live in `window.VENDORS` in

@@ -80,7 +80,7 @@ hyphen.
 
 ## Managing exhibitors
 
-All 15 confirmed 2027 exhibitors live in `window.VENDORS` in
+All 31 confirmed 2027 exhibitors live in `window.VENDORS` in
 `assets/js/expo-data.js`, which drives both the directory on `vendors.html` and
 the six-card preview on the home page.
 
@@ -99,7 +99,7 @@ the six-card preview on the home page.
 
 Filter chips generate themselves from the `category` values actually in use, so
 adding a new category is just a matter of typing it. Booth numbers are blank on
-all 15 — fill them in once the floor plan is set and they appear on each card.
+all 31 — fill them in once the floor plan is set and they appear on each card.
 
 > **Blurbs need a review pass.** I wrote them from each business's trade and
 > website. They're deliberately factual and claim-free, but you know these
@@ -114,6 +114,8 @@ all 15 — fill them in once the floor plan is set and they appear on each card.
 3. **Trim the whitespace** around the mark before saving. Baked-in padding makes
    a logo render small — several of the supplied files were 30–75% empty space.
 4. Keep it under roughly 640px on the long edge; that's plenty at display size.
+5. If the logo has **white lettering**, add `logoDark: true` to the entry so it
+   sits on a navy plate instead of vanishing on the white card.
 
 **Every SVG needs a `viewBox`.** Without one the browser can't work out the
 aspect ratio, so the logo won't scale and the balancer below can't size it.
@@ -154,10 +156,12 @@ in place of the `<img>` — that's what the GRBIA card does.
 | Card | Logo | Links to |
 |---|---|---|
 | Presenting Sponsor | `lee-building-products.webp` | leebp.com |
+| Presenting Sponsor | `winsupply-owensboro.svg` | winsupplyinc.com |
 | Presented By | `grbia.webp` | greenriverbia.com |
 
-Winsupply of Owensboro co-sponsored the 2026 show and is **not** on the page —
-add them back if they return for 2027.
+Winsupply's mark is a 5:1 wordmark, so its `<img>` carries
+`sponsor__logo--wide` to stretch it to the width cap — otherwise it renders tiny
+next to Lee's.
 
 ## Managing gallery photos
 

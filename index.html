@@ -251,7 +251,7 @@
     <div class="container">
       <div class="text-center mb-3 reveal">
         <span class="eyebrow">Admission is free thanks to</span>
-        <h2 style="font-size:clamp(1.5rem,2.6vw,2rem)">Our presenting sponsor</h2>
+        <h2 style="font-size:clamp(1.5rem,2.6vw,2rem)">Our presenting sponsors</h2>
       </div>
       <!-- To add a sponsor, copy one <a class="sponsor"> block. Logo files live in
            assets/img/sponsors/ — see the README. Kept as plain HTML rather than
@@ -261,6 +261,11 @@
           <span class="sponsor__tier">Presenting Sponsor</span>
           <img class="sponsor__logo" src="assets/img/sponsors/lee-building-products.webp"
                alt="Lee Building Products" width="1600" height="597" loading="lazy" decoding="async">
+        </a>
+        <a class="sponsor sponsor--presenting" href="https://www.winsupplyinc.com/ftue" target="_blank" rel="noopener noreferrer">
+          <span class="sponsor__tier">Presenting Sponsor</span>
+          <img class="sponsor__logo sponsor__logo--wide" src="assets/img/sponsors/winsupply-owensboro.svg"
+               alt="Winsupply of Owensboro" width="176" height="34" loading="lazy" decoding="async">
         </a>
         <a class="sponsor" href="https://greenriverbia.com" target="_blank" rel="noopener noreferrer">
           <span class="sponsor__tier">Presented By</span>
@@ -410,7 +415,7 @@
   }).slice(0, 6);
   wrap.innerHTML = picked.map(function (v) {
     var logo = v.logo
-      ? '<div class="vendor__logo"><img src="' + esc(v.logo) + '" alt="' + esc(v.name) +
+      ? '<div class="vendor__logo' + (v.logoDark ? ' vendor__logo--dark' : '') + '"><img src="' + esc(v.logo) + '" alt="' + esc(v.name) +
         ' logo" loading="lazy" decoding="async"></div>'
       : '';
     return '<article class="vendor reveal">' +

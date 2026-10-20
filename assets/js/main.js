@@ -193,7 +193,7 @@
       }
 
       var logo = v.logo
-        ? '<div class="vendor__logo"><img src="' + esc(v.logo) + '" alt="' + esc(v.name) +
+        ? '<div class="vendor__logo' + (v.logoDark ? ' vendor__logo--dark' : '') + '"><img src="' + esc(v.logo) + '" alt="' + esc(v.name) +
           ' logo" loading="lazy" decoding="async"></div>'
         : '';
 

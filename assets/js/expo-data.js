@@ -39,6 +39,7 @@ window.EXPO = {
      category (required)  Any string — see CATEGORIES below for the ones in use
      blurb    (required)  1–2 sentences, ~120–180 characters reads best
      logo     (optional)  Path under assets/img/vendors/ (lowercase, hyphenated)
+     logoDark (optional)  true = white-lettered logo, shown on a navy plate
      website  (optional)  Full URL including https://
      phone    (optional)  Display format, e.g. '(270) 555-0100'
      booth    (optional)  Booth number, e.g. '204'
@@ -50,19 +51,28 @@ window.CATEGORIES = [
   'Windows, Doors & Flooring',
   'Heating, Cooling & Insulation',
   'Outdoor & Landscape',
-  'Pools & Spas',
   'Home Services',
   'Building Supply & Energy',
-  'Finance & Insurance'
+  'Finance & Insurance',
+  'Community & Education'
 ];
 
 window.VENDORS = [
   {
-    name: 'Hill Custom Homes',
-    category: 'Builders & Remodeling',
-    blurb: 'Custom home building in the Owensboro area — from lot selection and plan design through to finish-out.',
-    logo: 'assets/img/vendors/hill-custom-homes.jpg',
-    website: 'https://hillcustom.com/'
+    name: 'Lee Building Products',
+    category: 'Building Supply & Energy',
+    blurb: 'Brick, concrete masonry, pavers, retaining walls, stone and outdoor living products for residential and commercial projects.',
+    logo: 'assets/img/sponsors/lee-building-products.webp',
+    website: 'https://www.leebp.com/',
+    featured: true
+  },
+  {
+    name: 'Winsupply of Owensboro',
+    category: 'Building Supply & Energy',
+    blurb: 'Local distributor of plumbing, HVAC and waterworks supplies for contractors and trade professionals.',
+    logo: 'assets/img/vendors/winsupply-owensboro.svg',
+    website: 'https://www.winsupplyinc.com/ftue',
+    featured: true
   },
   {
     name: 'Homes by Mattingly Construction',
@@ -72,11 +82,41 @@ window.VENDORS = [
     website: 'https://mattinglyhomes.com/'
   },
   {
+    name: 'Trident Painting',
+    category: 'Builders & Remodeling',
+    blurb: 'Residential and commercial painting, plus cabinet painting, epoxy floor coatings, drywall repair and pressure washing.',
+    logo: 'assets/img/vendors/trident-painting.png',
+    website: 'https://tridentpaintingllc.com/'
+  },
+  {
+    name: 'Unique Granite & Marble',
+    category: 'Builders & Remodeling',
+    blurb: 'Custom granite, marble and quartz countertops — measured, fabricated and installed from an Owensboro shop.',
+    logo: 'assets/img/vendors/unique-granite-and-marble.png',
+    logoDark: true,
+    website: 'https://www.uniquegraniteandmarble.com/'
+  },
+  {
     name: 'Sun Windows and Doors',
     category: 'Windows, Doors & Flooring',
     blurb: 'Regionally manufactured windows and doors for new construction and replacement projects, built to order.',
     logo: 'assets/img/vendors/sun-windows.svg',
     website: 'https://sunwindows.com/'
+  },
+  {
+    name: 'Window Shopping',
+    category: 'Windows, Doors & Flooring',
+    blurb: 'Replacement windows and doors — including storm, patio and French doors — for homes in the Owensboro and Evansville area.',
+    logo: 'assets/img/vendors/window-shopping.webp',
+    website: 'https://windowshoppingevansville.com/service-areas/owensboro-ky/'
+  },
+  {
+    name: 'Owensboro Garage Doors',
+    category: 'Windows, Doors & Flooring',
+    blurb: 'Residential and commercial garage doors and openers — sales, installation, repair and maintenance.',
+    logo: 'assets/img/vendors/owensboro-garage-doors.png',
+    logoDark: true,
+    website: 'https://owensborogaragedoors.com/'
   },
   {
     name: "Wilson's Custom Flooring",
@@ -86,11 +126,25 @@ window.VENDORS = [
     website: 'https://www.wilsonscustom.com/'
   },
   {
+    name: 'Carpets Unlimited Flooring Center',
+    category: 'Windows, Doors & Flooring',
+    blurb: 'Flooring sales and installation — carpet, hardwood, vinyl, laminate and ceramic tile.',
+    logo: 'assets/img/vendors/carpets-unlimited.png',
+    website: 'https://www.carpetsunl.com/'
+  },
+  {
     name: 'Budget Blinds of Owensboro',
     category: 'Windows, Doors & Flooring',
     blurb: 'Custom window coverings — blinds, shades, shutters and drapery, with in-home measuring and installation.',
     logo: 'assets/img/vendors/budget-blinds.svg',
     website: 'https://www.budgetblinds.com/owensboro/'
+  },
+  {
+    name: 'Simmonds Blinds and Drapes',
+    category: 'Windows, Doors & Flooring',
+    blurb: 'Blinds, shades, drapery, motorized and exterior shades and awnings for homes and businesses, measured and installed.',
+    logo: 'assets/img/vendors/simmonds-blinds-and-drapes.png',
+    website: 'https://www.simmondsblinds.com/'
   },
   {
     name: 'Schwartz Heating & Cooling',
@@ -121,18 +175,25 @@ window.VENDORS = [
     website: ''
   },
   {
+    name: "River's Edge Lawn & Landscape",
+    category: 'Outdoor & Landscape',
+    blurb: 'Lawn care, landscape and hardscape design and installation, and yard drainage for homes and businesses.',
+    logo: 'assets/img/vendors/rivers-edge-lawn-and-landscape.png',
+    website: 'https://www.riversedgelawn.net/'
+  },
+  {
+    name: 'Hobgood Landscaping',
+    category: 'Outdoor & Landscape',
+    blurb: 'Year-round lawn care, landscaping, irrigation and landscape lighting for residential and commercial properties.',
+    logo: 'assets/img/vendors/hobgood-landscaping.png',
+    website: 'https://www.hobgoodlandscaping.com/'
+  },
+  {
     name: 'Rager Fencing & Lawn Care',
     category: 'Outdoor & Landscape',
     blurb: 'Fence installation in wood, vinyl, aluminum and chain link, plus ongoing lawn care and property upkeep.',
     logo: 'assets/img/vendors/rager-fencing.png',
     website: 'https://ragerfencinglawncarellc.com/'
-  },
-  {
-    name: 'Bedrock Pools',
-    category: 'Pools & Spas',
-    blurb: 'In-ground pool design and construction, plus decking, water features and full backyard build-outs.',
-    logo: 'assets/img/vendors/bedrock-pools.webp',
-    website: 'https://bedrockpoolsky.com/'
   },
   {
     name: 'Disaster Team',
@@ -142,11 +203,40 @@ window.VENDORS = [
     website: 'https://disasterteaminc.com/'
   },
   {
-    name: 'Winsupply of Owensboro',
-    category: 'Building Supply & Energy',
-    blurb: 'Local distributor of plumbing, HVAC and waterworks supplies for contractors and trade professionals.',
-    logo: 'assets/img/vendors/winsupply-owensboro.svg',
-    website: 'https://www.winsupplyinc.com/ftue'
+    name: 'The Honey Do Service',
+    category: 'Home Services',
+    blurb: 'Handyman and home-improvement work — repairs, carpentry, drywall, painting, flooring and remodels.',
+    logo: 'assets/img/vendors/honey-do-service.png',
+    logoDark: true,
+    website: 'https://honeydoservice.com/improving/owensboro-ky/'
+  },
+  {
+    name: 'Patriot Pest',
+    category: 'Home Services',
+    blurb: 'Residential and commercial pest control, including termite, rodent and bed bug treatment and prevention plans.',
+    logo: 'assets/img/vendors/patriot-pest.jpg',
+    website: 'https://patriotpestky.com/'
+  },
+  {
+    name: "Ryan's Roll-Off Dumpsters",
+    category: 'Home Services',
+    blurb: 'Roll-off dumpster rental for construction, remodeling and cleanout debris, booked online.',
+    logo: 'assets/img/vendors/ryans-roll-off-dumpsters.png',
+    website: 'https://www.ryansrolloffdumpsters.com/'
+  },
+  {
+    name: 'Ever Bin Clean',
+    category: 'Home Services',
+    blurb: 'Cleaning, disinfecting and deodorizing for residential garbage cans and dumpsters.',
+    logo: 'assets/img/vendors/ever-bin-clean.png',
+    website: 'https://everbinclean.com/'
+  },
+  {
+    name: 'MarkWell & Co.',
+    category: 'Home Services',
+    blurb: 'Custom fabrication studio making wall art, signage, monuments, memorials, dedication plaques and engraving.',
+    logo: 'assets/img/vendors/markwell-and-co.svg',
+    website: 'https://www.markwellandco.com/'
   },
   {
     name: 'Atmos Energy',
@@ -158,9 +248,36 @@ window.VENDORS = [
   {
     name: 'Kentucky Farm Bureau Insurance',
     category: 'Finance & Insurance',
-    blurb: 'Homeowners, builder\u2019s risk and property coverage from local agents who know Daviess County.',
+    blurb: 'Homeowners, builder’s risk and property coverage from local agents who know Daviess County.',
     logo: 'assets/img/vendors/kentucky-farm-bureau.jpg',
     website: 'https://www.kyfb.com/'
+  },
+  {
+    name: 'Rural 1st',
+    category: 'Finance & Insurance',
+    blurb: 'Rural home, land and lot loans from a Farm Credit lender, served locally through Farm Credit Mid-America.',
+    logo: 'assets/img/vendors/rural-1st.svg',
+    website: 'https://www.rural1st.com/'
+  },
+  {
+    name: 'Owensboro Community & Technical College',
+    category: 'Community & Education',
+    blurb: 'Associate degrees, certificates and technical training in the trades, including a carpentry certificate.',
+    logo: 'assets/img/vendors/octc.svg',
+    website: 'https://owensboro.kctcs.edu/'
+  },
+  {
+    name: 'OHS Carpentry',
+    category: 'Community & Education',
+    blurb: 'Owensboro High School carpentry students, showing the picnic tables, sheds and other projects built in class.',
+    website: ''
+  },
+  {
+    name: 'Daviess County Extension Master Gardeners',
+    category: 'Community & Education',
+    blurb: 'Volunteers trained by the county Extension office, answering home gardening questions and running community garden projects.',
+    logo: 'assets/img/vendors/master-gardeners.png',
+    website: 'https://daviess.ca.uky.edu/GRAEMGA'
   }
 ];
 
